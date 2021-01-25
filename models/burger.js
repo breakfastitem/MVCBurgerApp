@@ -3,7 +3,7 @@ const orm = require("../config/orm");
 const burger = {
 
     addBurger: function (burgerName,callback) {
-        orm.insertOne(burgerName,false,()=>{
+        orm.insertOne(burgerName,false,(err)=>{
             callback(err);
         });
     },
