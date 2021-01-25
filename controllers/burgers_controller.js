@@ -15,14 +15,14 @@ router.get("/",(req,res)=>{
 router.post("/api/burgers",(req,res)=>{
     burger.addBurger(req.body.name,(err)=>{
         if(err) throw err;
-        res.sendstatus(200);
+        res.sendStatus(200);
     });
 });
 
 router.put("/api/eat/",(req,res)=>{
     burger.eatBurger(req.body.id,req.body.name,(err)=>{
         if(err) throw err;
-        res.sendstatus(200);
+        res.sendStatus(200);
     });
 });
 
