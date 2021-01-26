@@ -14,11 +14,20 @@ $("#submit-button").on("click",(event)=>{
             console.log(err);
         }
     }).then((res)=>{
-        $.ajax("/api/burgers", {
-            method: "GET"
-        }).then((response)=>{
- 
-        });
-        
+        location.reload();     
     });
+});
+
+$("#left-list").on("click",(event)=>{
+   
+    if(event.target.id.split("-")[0]=="eatButton"){
+        $.ajax("/api/eat",{
+            method:"PUT",
+            data:{
+                id:event.target.id.split("-")[1]
+            }
+        }).then((res)=>{
+            location.reload();
+        });
+    }
 });
