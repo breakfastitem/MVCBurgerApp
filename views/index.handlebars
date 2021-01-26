@@ -1,10 +1,10 @@
 <div class="row">
     <div class="col-12">
-        <h1>Burger App</h1>
+        <h1 class="text-center">Burger App</h1>
 
         <div class="row">
             <div class="col-6">
-                <ul class="burger_list">
+                <ul id="left-list" class="burger_list">
                     {{#each burgers}}
                     {{#unless devoured}}
                     {{> burgers/burger}}
@@ -12,10 +12,11 @@
                     {{/each}}
                 </ul>
             </div>
+
             <div class="col-6">
                 <ul class="burger_list">
                     {{#each burgers}}
-                   {{#if devoured}}
+                    {{#if devoured}}
                     {{> burgers/burger}}
                     {{/if}}
                     {{/each}}
@@ -23,11 +24,11 @@
             </div>
         </div>
 
-        <form>
+        <form class="text-center">
             <input id="name-input" placeholder="name"></input>
             <button id="submit-button">Submit</button>
         </form>
 
-        <p>Enter burger you want to eat</p>
+        <p class="text-center">Enter burger you want to eat</p>
     </div>
 </div>
