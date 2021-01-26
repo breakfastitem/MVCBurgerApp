@@ -14,6 +14,11 @@ $("#submit-button").on("click",(event)=>{
             console.log(err);
         }
     }).then((res)=>{
-        console.log(res);
+        $.ajax("/api/burgers", {
+            method: "GET"
+        }).then((response)=>{
+ 
+        });
+        
     });
 });
