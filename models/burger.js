@@ -8,8 +8,8 @@ const burger = {
         });
     },
     
-    eatBurger: function(burgerId,burgerName,callback){
-        orm.updateOne(id,burgerName,true,(err)=>{
+    eatBurger: function(burgerId,callback){
+        orm.updateOne(burgerId,true,(err)=>{
             callback(err);
         });
     },

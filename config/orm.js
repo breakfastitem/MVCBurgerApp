@@ -13,8 +13,8 @@ function insertOne(burgerName,devoured,callback){
     });
 }
 
-function updateOne(id,burgerName,devoured,callback){
-    connection.query("UPDATE burgers SET burger_name=?,devoured=? WHERE id=?",[burgerName,devoured,id],(err)=>{
+function updateOne(id,devoured,callback){
+    connection.query("UPDATE burgers SET devoured=? WHERE id=?",[devoured,id],(err)=>{
         callback(err);
     });
 }

@@ -20,7 +20,7 @@ router.post("/api/burgers",(req,res)=>{
 });
 
 router.put("/api/eat/",(req,res)=>{
-    burger.eatBurger(req.body.id,req.body.name,(err)=>{
+    burger.eatBurger(req.body.id,(err)=>{
         if(err) throw err;
         res.sendStatus(200);
     });
