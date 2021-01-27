@@ -6,3 +6,13 @@ body{
     margin-bottom: 1px;
     border-color: black;
 }
+ul{
+    list-style-type: none;
+    padding-left: 2px;
+   
+}
+li{
+    padding-top: 5px;
+    padding-left: 12px;
+    height: 39px;
+}
