@@ -1,11 +1,6 @@
 body{
     background-color: rgb(255, 208, 0);
 }
-.burger{
-    background-color: whitesmoke;
-    margin-bottom: 1px;
-    border-color: black;
-}
 ul{
     list-style-type: none;
     padding-left: 2px;
@@ -15,4 +10,14 @@ li{
     padding-top: 5px;
     padding-left: 12px;
     height: 39px;
+}
+.burger{
+    margin-top: 5px;
+    background-color: whitesmoke;
+    margin-bottom: 5px;
+    border-color: black;
+}
+.container{
+    margin-top: 20px;
+    background-color: darkgray;
 }
